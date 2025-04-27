@@ -1,10 +1,10 @@
 
 import profile from './profile.png';
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { } from '@fortawesome/free-solid-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Xu Zhigang",
+  name: "Zhigang Xu",
   links: [
     {
       title: "About",
@@ -24,13 +24,13 @@ export const navigation = {
     },
     {
       title: "Blog",
-      link: "/",
+      link: "https://vin1992.github.io/",
     }
   ],
 }
 export const intro = {
-  title: "Hey, I'm Xu Zhigang",
-  description: "A Web Development Engineer creating hybrid html5 pages and desktop websites.",
+  title: "Hey, I'm Zhigang Xu",
+  description: "A Web Development Engineer with expertise in developing hybrid HTML5 pages and desktop websites.",
   image: profile.src,
   buttons: [
     {
@@ -40,7 +40,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "https://docs.google.com/document/d/1XUY_J0HP3d0SYyrihvP0-t4USy3cyrI4CKBK3OY2N_c/edit?usp=sharing",
       isPrimary: false,
     },
   ],
@@ -49,9 +49,9 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I am a Web Developer with 6 years of experience specializing in front-end and full-stack development. I have a strong background in creating responsive and user-friendly web applications using HTML, CSS, JavaScript, and various frameworks such as React and Vue.js. I am also proficient in mobile app development using Flutter and have experience with backend technologies like Node.js and Express.",
+    "I graduated from Algonquin College with a diploma in Web Development and Internet Applications, building a solid foundation in creating responsive, user-focused websites and applications using technologies like React, Blazor, and .NET.",
+    "Previously, I worked at NetEase, contributing to large-scale projects in fast-paced environments. I value clean code, thoughtful design, and clear communication, and I am excited to bring my skills into new projects that make a real impact.",
   ],
 }
 
@@ -59,13 +59,18 @@ export const work = {
   title: "What I do",
   cards: [
     {
-      title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+      title: "Web Development",
+      description: "Building responsive and scalable web applications using React, Vue, Blazor, and .NET.",
       icons: null,
     },
     {
-      title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
+      title: "Performance Optimization",
+      description: "Improving website speed, load time, and overall performance following industry best practices.",
+      icons: null,
+    },
+    {
+      title: "User Experience Enhancement",
+      description: "Creating intuitive, accessible, and user-centered digital experiences across platforms.",
       icons: null,
     }
   ],
@@ -75,36 +80,32 @@ export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "StarBook",
-      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+      title: "Digital Collectibles Mobile Store",
+      description: "A mobile web store designed for showcasing and selling digital collectibles, built with Vue, Vuex, and Vite. ",
       icons: [
         {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
+          icon: faLink,
+          link: "https://dc.m.163.com/",
+        },
+      ]
+    },
+    {
+      title: "Wooden Craft Store",
+      description: "A simulated e-commerce website for selling handcrafted wooden products, built with C# Blazor and PostgreSQL. Features responsive design, user authentication, and order management workflows.",
+      icons: [
+        {
+          icon: faLink,
+          link: "https://github.com/vin1992/wooden-craft-store/tree/main/WoodenCraft",
         },
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
+          link: "https://github.com/vin1992/wooden-craft-store/tree/main/WoodenCraft",
         },
       ]
     },
     {
-      title: "QuranTalk",
-      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-        },
-        {
-          icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
-        },
-      ]
-    },
-    {
-      title: "Portfolio",
-      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
+      title: "Portfolio (deprecated)",
+      description: "A personal portfolio website showcasing my projects and skills, built with React and Bootstrap. Features a responsive design and smooth navigation.",
       icons: [
         {
           icon: faGithub,
@@ -117,7 +118,7 @@ export const projects = {
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at vincoder1992@gmail.com.",
+  description: "Coffee Chat! Please feel free to reach out directly by email at vincoder1992@gmail.com.",
   buttons: [
     {
       title: "Email Me",
@@ -131,34 +132,30 @@ export const contact = {
 export const SEO = {
   // 50 - 60 char  
   title: "Web Development Engineer | Vue | React | Flutter | iOS | Android | Mobile App Development | Web Development",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  description: "A Web Development Engineer with expertise in developing hybrid HTML5 pages and desktop websites.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "@xu zhigang",
+  title: "@zhigang xu",
   description: "Web Development Engineer | Vue | React | Flutter | iOS | Android | Mobile App Development | Web Development",
   cards: [
     {
-      title: "My website",
+      title: "My portfolio",
       link: "/portfolio",
     },
     {
-      title: "QuranTalk App",
-      link: "https://www.qurantalk.app/",
-    },
-    {
-      title: "StarBook App",
-      link: "https://starbook.dev/",
-    },
-    {
       title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
+      link: "https://github.com/vin1992/",
+    },
+    {
+      title: "My Blog",
+      link: "https://vin1992.github.io/",
     },
     {
       title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      link: "https://www.linkedin.com/in/zhigang-xu-6695122b7/",
     },
   ]
 }
