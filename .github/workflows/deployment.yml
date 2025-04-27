@@ -13,7 +13,7 @@ on:
   workflow_dispatch:           # 手动触发，方便调试
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write    
 
@@ -54,7 +54,7 @@ jobs:
     
     # https://github.com/marketplace/actions/deploy-to-github-pages
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.5.0
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages # The branch the action should deploy to.
         folder: out # The folder the action should deploy.
