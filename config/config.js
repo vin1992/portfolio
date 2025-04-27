@@ -4,7 +4,7 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Xu Zhigang1112222",
+  name: "Xu Zhigang",
   links: [
     {
       title: "About",
