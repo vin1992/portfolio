@@ -9,6 +9,13 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  
+  workflow_dispatch:           # 手动触发，方便调试
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write    
 
 jobs:
   build:
@@ -22,20 +29,23 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Set Environment Variables
       run: echo "BASE_PATH=/${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+    
     - name: Test Environment Variables
       run: echo ${{ env.BASE_PATH }}
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    
     - run: npm ci
     # - run: npm run prebuild # build automatically runs prebuild
     - run: npm run build
@@ -44,7 +54,7 @@ jobs:
     
     # https://github.com/marketplace/actions/deploy-to-github-pages
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.4
+      uses: JamesIves/github-pages-deploy-action@4
       with:
         branch: gh-pages # The branch the action should deploy to.
         folder: out # The folder the action should deploy.
