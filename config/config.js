@@ -24,13 +24,13 @@ export const navigation = {
     },
     {
       title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
+      link: "/",
     }
   ],
 }
 export const intro = {
   title: "Hey, I'm Xu Zhigang",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  description: "A Web Development Engineer creating hybrid html5 pages and desktop websites.",
   image: profile.src,
   buttons: [
     {
@@ -108,7 +108,7 @@ export const projects = {
       icons: [
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
+          link: "https://github.com/vin1992/portfolio",
         },
       ]
     },
@@ -117,17 +117,12 @@ export const projects = {
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at vincoder1992@gmail.com.",
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:hashirshoaeb@gmail.com",
+      link: "mailto:vincoder1992@gmail.com",
       isPrimary: true,
-    },
-    {
-      title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
-      isPrimary: false,
     },
   ]
 }
@@ -135,19 +130,19 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
+  title: "Web Development Engineer | Vue | React | Flutter | iOS | Android | Mobile App Development | Web Development",
   description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "@hashirshoaeb",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "@xu zhigang",
+  description: "Web Development Engineer | Vue | React | Flutter | iOS | Android | Mobile App Development | Web Development",
   cards: [
     {
       title: "My website",
-      link: "https://hashirshoaeb.com/",
+      link: "/portfolio",
     },
     {
       title: "QuranTalk App",
