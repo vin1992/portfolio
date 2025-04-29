@@ -1,7 +1,7 @@
 
 import profile from './profile.png';
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faLink, faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
   name: "Zhigang Xu",
@@ -30,7 +30,7 @@ export const navigation = {
 }
 export const intro = {
   title: "Hey, I'm Zhigang Xu",
-  description: "A Web Development Engineer with expertise in developing hybrid HTML5 pages and desktop websites.",
+  description: "A Web Developer skilled in building responsive websites and embedded web apps, with expertise in both front-end and back-end technologies.",
   image: profile.src,
   buttons: [
     {
@@ -49,8 +49,8 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I am a Web Developer with 6 years of experience specializing in front-end and full-stack development. I have a strong background in creating responsive and user-friendly web applications using HTML, CSS, JavaScript, and various frameworks such as React and Vue.js. I am also proficient in mobile app development using Flutter and have experience with backend technologies like Node.js and Express.",
-    "I graduated from Algonquin College with a diploma in Web Development and Internet Applications, building a solid foundation in creating responsive, user-focused websites and applications using technologies like React, Blazor, and .NET.",
+    "I am a Web Developer with 6 years of experience specializing in front-end and full-stack development. I have a strong background in creating responsive and user-friendly web applications using HTML, CSS, JavaScript, and various frameworks such as React and Vue.js. I also have experience with backend technologies like Node.js and Express.",
+    "I graduated from Algonquin College with a diploma in Web Development and Internet Applications, building a solid foundation in creating responsive, user-focused websites and applications using full stack technologies like Python, C# and MariaDB.",
     "Previously, I worked at NetEase, contributing to large-scale projects in fast-paced environments. I value clean code, thoughtful design, and clear communication, and I am excited to bring my skills into new projects that make a real impact.",
   ],
 }
@@ -84,7 +84,7 @@ export const projects = {
       description: "A mobile web store designed for showcasing and selling digital collectibles, built with Vue, Vuex, and Vite. ",
       icons: [
         {
-          icon: faLink,
+          icon: faSquareArrowUpRight,
           link: "https://dc.m.163.com/",
         },
       ]
@@ -94,7 +94,7 @@ export const projects = {
       description: "A simulated e-commerce website for selling handcrafted wooden products, built with C# Blazor and PostgreSQL. Features responsive design, user authentication, and order management workflows.",
       icons: [
         {
-          icon: faLink,
+          icon: faSquareArrowUpRight,
           link: "https://github.com/vin1992/wooden-craft-store/tree/main/WoodenCraft",
         },
         {
@@ -104,12 +104,12 @@ export const projects = {
       ]
     },
     {
-      title: "Portfolio (deprecated)",
-      description: "A personal portfolio website showcasing my projects and skills, built with React and Bootstrap. Features a responsive design and smooth navigation.",
+      title: "PostCSS Plugin: Effortless Theme Generation",
+      description: "A PostCSS plugin that automatically generates multi-theme support (light, dark, night) for styles and images — making theme switching effortless and consistent across the app.",
       icons: [
         {
           icon: faGithub,
-          link: "https://github.com/vin1992/portfolio",
+          link: "https://github.com/vin1992/postcss-generate-theme",
         },
       ]
     },
