@@ -118,7 +118,7 @@ export const projects = {
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please feel free to reach out directly by email at vincoder1992@gmail.com.",
+  description: "Please feel free to reach out directly by email at vincoder1992@gmail.com.",
   buttons: [
     {
       title: "Email Me",
